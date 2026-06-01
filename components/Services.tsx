@@ -1,24 +1,32 @@
 "use client";
 
 import Image from "next/image";
+import { BrainCircuit, GraduationCap } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const services = [
+type Service = {
+  Icon?: LucideIcon;
+  logo?: string;
+  title: string;
+  description: string;
+};
+
+const services: Service[] = [
   {
-    icon: "📊",
+    Icon: BrainCircuit,
     title: "AI Automation Consulting",
     description:
       "Analyze your business processes and design automation solutions that save time and cost.",
   },
   {
-    icon: null,
     logo: "/n8n-icon.webp",
     title: "n8n Implementation",
     description:
       "Build end-to-end workflow automation using n8n, from setup to deployment.",
   },
   {
-    icon: "🎓",
-    title: "Private Mentoring",
+    Icon: GraduationCap,
+    title: "Corporate Private Mentoring",
     description: "Learn AI automation hands-on using your real business case.",
   },
 ];
@@ -27,10 +35,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      style={{
-        padding: "120px 20px",
-        backgroundColor: "#0a0a0a",
-      }}
+      style={{ padding: "120px 20px", backgroundColor: "#0a0a0a" }}
     >
       <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
         <h2
@@ -42,7 +47,6 @@ export default function Services() {
             lineHeight: "56px",
             color: "#e5e2e1",
             marginBottom: "64px",
-            textAlign: "left",
           }}
         >
           What I Do
@@ -61,17 +65,7 @@ export default function Services() {
   );
 }
 
-function ServiceCard({
-  icon,
-  logo,
-  title,
-  description,
-}: {
-  icon: string | null;
-  logo?: string;
-  title: string;
-  description: string;
-}) {
+function ServiceCard({ Icon, logo, title, description }: Service) {
   return (
     <div
       style={{
@@ -79,32 +73,44 @@ function ServiceCard({
         border: "1px solid #222222",
         padding: "32px",
         borderRadius: "16px",
-        transition: "border-color 0.2s",
+        transition: "border-color 0.2s, box-shadow 0.2s",
         cursor: "default",
       }}
-      onMouseOver={(e) => (e.currentTarget.style.borderColor = "#8fcdff")}
-      onMouseOut={(e) => (e.currentTarget.style.borderColor = "#222222")}
+      onMouseOver={(e) => {
+        e.currentTarget.style.borderColor = "#8fcdff";
+        e.currentTarget.style.boxShadow = "0 4px 24px rgba(143,205,255,0.08)";
+      }}
+      onMouseOut={(e) => {
+        e.currentTarget.style.borderColor = "#222222";
+        e.currentTarget.style.boxShadow = "none";
+      }}
     >
       <div
         style={{
-          width: "48px",
-          height: "48px",
+          width: "52px",
+          height: "52px",
           backgroundColor: "rgba(143,205,255,0.1)",
-          borderRadius: "8px",
+          borderRadius: "12px",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          fontSize: "24px",
           marginBottom: "24px",
-          padding: logo ? "6px" : undefined,
+          padding: logo ? "8px" : undefined,
         }}
       >
         {logo ? (
-          <Image src={logo} alt={title} width={36} height={36} style={{ objectFit: "contain", width: "100%", height: "100%" }} />
-        ) : (
-          icon
-        )}
+          <Image
+            src={logo}
+            alt={title}
+            width={36}
+            height={36}
+            style={{ objectFit: "contain", width: "100%", height: "100%" }}
+          />
+        ) : Icon ? (
+          <Icon size={28} color="#8fcdff" strokeWidth={1.5} />
+        ) : null}
       </div>
+
       <h3
         style={{
           fontFamily: "var(--font-montserrat)",

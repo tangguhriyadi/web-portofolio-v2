@@ -18,14 +18,17 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => {
       const sections = ["home", "services", "projects", "youtube", "contact"];
-      for (const id of [...sections].reverse()) {
+      let current = "home";
+      for (const id of sections) {
         const el = document.getElementById(id);
-        if (el && window.scrollY >= el.offsetTop - 100) {
-          setActive(id);
-          break;
+        if (el) {
+          const top = el.getBoundingClientRect().top;
+          if (top <= 96) current = id; // 96px = navbar height + buffer
         }
       }
+      setActive(current);
     };
+    onScroll(); // run on mount to set initial state
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
