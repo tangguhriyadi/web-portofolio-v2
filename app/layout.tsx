@@ -24,6 +24,9 @@ const BASE_URL =
   process.env.NEXT_PUBLIC_BASE_URL ?? "https://tangguhriyadi.com";
 
 export const metadata: Metadata = {
+  verification: {
+    google: "D9O3zd2SaiXBnZqirPmd6baOLFf29HwTVjKKeRJuPmY",
+  },
   title: "Tangguh Riyadi | AI Automation Engineer",
   description:
     "I help people learn AI automation, build real projects, and land remote jobs without an IT degree.",
