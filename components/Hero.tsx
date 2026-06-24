@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 const stats = [
-  { value: "15,000+", label: "YouTube Subscribers" },
+  { value: "20,000+", label: "YouTube Subscribers" },
   { value: "400K+", label: "Total Views" },
   { value: "500+", label: "Deployed Production Workflows" },
 ];

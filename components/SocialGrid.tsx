@@ -6,7 +6,7 @@ const socials = [
   {
     logo: "/youtube.webp",
     title: "YouTube",
-    description: "15,000+ Subscribers — Free tutorials on AI automation from zero",
+    description: "20,000+ Subscribers — Free tutorials on AI automation from zero",
     href: "https://youtube.com/@tangguhriyadiyt",
   },
   {

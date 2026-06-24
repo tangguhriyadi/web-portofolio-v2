@@ -127,7 +127,7 @@ export default function YouTube() {
               >
                 Full course playlist:{" "}
                 <strong style={{ color: "#e5e2e1" }}>AI Automation dari Nol</strong>. Join
-                15,000+ others and start your automation journey today.
+                20,000+ others and start your automation journey today.
               </p>
               <a
                 href="https://youtube.com/@tangguhriyadiyt"
