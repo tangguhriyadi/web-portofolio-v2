@@ -5,6 +5,7 @@ import Image from "next/image";
 import "./landing.css";
 
 const COVER = "/ebook-cover-idn.png";
+const CHECKOUT_URL = "https://lynk.id/tangguhriyadi/8m42vllldmgd/checkout";
 
 export default function LandingClient() {
   const rootRef = useRef<HTMLDivElement>(null);
@@ -85,7 +86,7 @@ export default function LandingClient() {
             >
               ◐
             </button>
-            <a className="btn small" href="#" role="button">
+            <a className="btn small" href={CHECKOUT_URL}>
               Ambil ebook · <span>IDR 79K</span>
             </a>
           </div>
@@ -110,7 +111,7 @@ export default function LandingClient() {
                   bukan cuma baca.
                 </p>
                 <div className="hero-ctas">
-                  <a className="btn" href="#" role="button">
+                  <a className="btn" href={CHECKOUT_URL}>
                     Mulai praktek hari ini{" "}
                     <span className="arr" aria-hidden="true">
                       →
@@ -489,7 +490,7 @@ export default function LandingClient() {
                     <li>Bab 8 Roadmap Karier</li>
                     <li>Bonus: template &amp; cheat sheet</li>
                   </ul>
-                  <a className="btn" href="#" role="button">
+                  <a className="btn" href={CHECKOUT_URL}>
                     Lanjut baca (<span>IDR 79K</span>)
                   </a>
                 </div>
@@ -795,7 +796,7 @@ export default function LandingClient() {
                 />
                 <div className="offer-price">IDR 79K</div>
                 <div className="offer-sub">sekali bayar · langsung download</div>
-                <a className="btn" href="#" role="button">
+                <a className="btn" href={CHECKOUT_URL}>
                   Saya mau ini{" "}
                   <span className="arr" aria-hidden="true">
                     →
@@ -876,7 +877,7 @@ export default function LandingClient() {
               punya sistem AI yang jalan, sekaligus portofolio pertamamu yang dibangun pake tanganmu
               sendiri.
             </p>
-            <a className="btn" href="#" role="button">
+            <a className="btn" href={CHECKOUT_URL}>
               Ambil ebook <span>IDR 79K</span>{" "}
               <span className="arr" aria-hidden="true">
                 →
@@ -906,7 +907,7 @@ export default function LandingClient() {
 
       {/* mobile sticky buy bar */}
       <div className={`sticky-cta${stickyShow ? " show" : ""}`}>
-        <a className="btn" href="#" role="button">
+        <a className="btn" href={CHECKOUT_URL}>
           Ambil ebook <span>IDR 79K</span>
         </a>
       </div>
