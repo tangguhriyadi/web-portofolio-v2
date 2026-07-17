@@ -87,7 +87,7 @@ export default function LandingClient() {
               ◐
             </button>
             <a className="btn small" href={CHECKOUT_URL}>
-              Ambil ebook · <span>IDR 79K</span>
+              Ambil ebook <span>IDR 79K</span>
             </a>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function LandingClient() {
                   Dari nol jadi <em>AI Automation Engineer</em>, tanpa gelar IT.
                 </h1>
                 <p className="hero-proof">
-                  Udah dipake 130+ pembaca · dari kreator AI Automation dengan 20K+ subscribers
+                  Udah dipake 150+ pembaca · dari kreator AI Automation dengan 20K+ subscribers
                   di YouTube
                 </p>
                 <p className="lede">
