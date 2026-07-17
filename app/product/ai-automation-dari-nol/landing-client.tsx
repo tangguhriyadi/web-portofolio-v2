@@ -103,6 +103,10 @@ export default function LandingClient() {
                 <h1 id="hero-h">
                   Dari nol jadi <em>AI Automation Engineer</em>, tanpa gelar IT.
                 </h1>
+                <p className="hero-proof">
+                  Udah dipake 130+ pembaca · dari kreator AI Automation dengan 20K+ subscribers
+                  di YouTube
+                </p>
                 <p className="lede">
                   Saya berangkat dari lulusan Manajemen yang usahanya bangkrut sampe kerja
                   full-time remote sebagai AI Automation Engineer kurang dari setahun. Tanpa
@@ -118,15 +122,14 @@ export default function LandingClient() {
                     </span>
                   </a>
                   <div className="price-tag">
-                    <span className="p">IDR 79K</span>
+                    <span className="p">IDR 79K</span>{" "}
                     <span className="s">sekali bayar · langsung download PDF</span>
                   </div>
                 </div>
                 <div className="chips" aria-label="Sekilas isi ebook">
                   <span className="chip">67 halaman</span>
                   <span className="chip">25+ screenshot asli</span>
-                  <span className="chip">3 workflow siap import</span>
-                  <span className="chip">15 template prompt AI</span>
+                  <span className="chip">7 template prompt AI</span>
                   <span className="chip">bisa dibaca di semua device</span>
                 </div>
               </div>
@@ -203,6 +206,14 @@ export default function LandingClient() {
                   dollar.&rdquo;
                 </blockquote>
                 <p className="attr">Penulis, kerja fully remote dari Bandung</p>
+                <a
+                  className="yt-link"
+                  href="https://youtube.com/@tangguhriyadiyt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tonton gratis dulu di YouTube <span aria-hidden="true">→</span>
+                </a>
               </div>
               <div className="fact-list reveal">
                 <div className="fact">
@@ -308,7 +319,7 @@ export default function LandingClient() {
                     Di awal 2022, saya mulai belajar coding dari YouTube. Nol besar. Nggak punya
                     background IT, nggak punya temen yang bisa ditanya, nggak punya modal buat
                     ikut bootcamp. Cuma saya, laptop, dan internet. Tapi saya punya satu hal:
-                    nggak ada lagi yang bisa saya lose. Jadi saya all in.
+                    nggak ada lagi yang bisa saya rugiin. Jadi saya all in.
                   </p>
                   <p>
                     Saya konsisten. Setiap hari belajar, setiap hari praktek. Dan di September
@@ -534,11 +545,6 @@ export default function LandingClient() {
                 <p>Nyimpen semuanya: rapi, terstruktur, dan ber-timestamp.</p>
               </div>
             </div>
-            <p className="build-payoff reveal">
-              <strong>Terus ebook ini bantu kamu jadiin bukti.</strong> Halaman-halaman terakhir
-              nunjukin persis cara packaging project ini jadi portofolio pertamamu: screenshot,
-              studi kasus 3 kalimat, dan post LinkedIn.
-            </p>
           </div>
         </section>
 
@@ -559,10 +565,7 @@ export default function LandingClient() {
                 <span className="c-no">BAB 3</span>
                 <div className="c-body">
                   <h3>Satu-satunya persiapan yang kamu butuhin</h3>
-                  <p>
-                    Semuanya gratis. Plus rutinitas &ldquo;biar nggak stuck&rdquo; yang misahin
-                    orang yang berhasil belajar tech dari yang nyerah.
-                  </p>
+                  <p>Fondasi JavaScript, JSON, dan API dalam bahasa simpel. Semuanya gratis.</p>
                 </div>
               </div>
               <div className="ch reveal">
@@ -600,7 +603,7 @@ export default function LandingClient() {
                 <span className="c-no">BAB 8</span>
                 <div className="c-body">
                   <h3>Roadmap-nya</h3>
-                  <p>Cara dapet kerja, gambaran rate pasar yang jujur, dan 30 hari pertamamu.</p>
+                  <p>Cara cari kerja remote dan monetisasi skill ini.</p>
                 </div>
               </div>
               <div className="ch bonus reveal">
@@ -608,7 +611,7 @@ export default function LandingClient() {
                 <div className="c-body">
                   <h3>Toolkit yang bakal kamu pake bertahun-tahun</h3>
                   <p>
-                    Cheat sheet node &amp; expression, 15 template prompt AI siap pakai, dan
+                    Cheat sheet node &amp; expression, 7 template prompt AI siap pakai, dan
                     checklist kesiapan ke level Intermediate.
                   </p>
                 </div>
@@ -745,15 +748,6 @@ export default function LandingClient() {
                       ✓
                     </span>
                     <span>
-                      <strong>BONUS: 3 file workflow n8n siap import</strong>, sistem persis dari
-                      Bab 5–7, jadi kamu bisa bedah atau langsung pake hasil jadinya.
-                    </span>
-                  </li>
-                  <li>
-                    <span className="mk" aria-hidden="true">
-                      ✓
-                    </span>
-                    <span>
                       <strong>25+ screenshot asli</strong> dari build beneran, bukan mockup.
                     </span>
                   </li>
@@ -762,7 +756,7 @@ export default function LandingClient() {
                       ✓
                     </span>
                     <span>
-                      <strong>15 template prompt AI tinggal copy-paste</strong> buat use case
+                      <strong>7 template prompt AI tinggal copy-paste</strong> buat use case
                       bisnis.
                     </span>
                   </li>
@@ -833,10 +827,9 @@ export default function LandingClient() {
               <details className="reveal">
                 <summary>Kalau saya stuck gimana?</summary>
                 <div className="a">
-                  Bab 3 ngajarin rutinitas &ldquo;biar nggak stuck&rdquo;, kebiasaan yang misahin
-                  orang yang berhasil belajar tech dari yang nyerah. Plus, 3 file workflow bonus
-                  itu sistem jadi persis dari Bab 5–7, jadi kamu selalu bisa import build yang
-                  udah jalan dan bandingin sama punyamu.
+                  Setiap langkah ditunjukin pake screenshot asli, jadi kamu selalu bisa bandingin
+                  layar kamu sama yang di ebook. Ebook ini juga nyantumin tips troubleshooting di
+                  bagian-bagian yang paling sering bikin pemula stuck.
                 </div>
               </details>
               <details className="reveal">
@@ -883,9 +876,7 @@ export default function LandingClient() {
                 →
               </span>
             </a>
-            <p className="under-btn">
-              Langsung download PDF · 67 halaman · bonus 3 file workflow n8n
-            </p>
+            <p className="under-btn">Langsung download PDF · 67 halaman</p>
 
             <div className="disclaimer">
               <strong>Disclaimer Penghasilan:</strong> Ebook ini ngajarin skill teknis. Semua

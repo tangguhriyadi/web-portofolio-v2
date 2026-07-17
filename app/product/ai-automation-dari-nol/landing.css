@@ -112,6 +112,22 @@
   color: var(--ink-2);
   max-width: 62ch;
 }
+.ebl .hero-proof {
+  font-size: 13px;
+  color: var(--ink-3);
+  margin: 0 0 14px;
+}
+.ebl .yt-link {
+  display: inline-block;
+  margin: 14px 0 0 26px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-ink);
+  text-decoration: none;
+}
+.ebl .yt-link:hover {
+  text-decoration: underline;
+}
 
 /* ---------- header ---------- */
 .ebl header {
