@@ -122,8 +122,12 @@ export default function LandingClient() {
                     </span>
                   </a>
                   <div className="price-tag">
-                    <span className="p">IDR 79K</span>{" "}
-                    <span className="s">sekali bayar · langsung download PDF</span>
+                    <span className="price-row">
+                      <s className="price-strike">IDR 219K</s>
+                      <span className="p">IDR 79K</span>
+                      <span className="save-badge">Hemat 64%</span>
+                    </span>
+                    <span className="s">harga launch · sekali bayar · langsung download PDF</span>
                   </div>
                 </div>
                 <div className="chips" aria-label="Sekilas isi ebook">
@@ -788,8 +792,12 @@ export default function LandingClient() {
                   alt=""
                   aria-hidden="true"
                 />
-                <div className="offer-price">IDR 79K</div>
-                <div className="offer-sub">sekali bayar · langsung download</div>
+                <div className="price-row offer-deal">
+                  <s className="price-strike">IDR 219K</s>
+                  <div className="offer-price">IDR 79K</div>
+                  <span className="save-badge">Hemat 64%</span>
+                </div>
+                <div className="offer-sub">harga launch · sekali bayar · langsung download PDF</div>
                 <a className="btn" href={CHECKOUT_URL}>
                   Saya mau ini{" "}
                   <span className="arr" aria-hidden="true">
